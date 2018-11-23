@@ -1,0 +1,11 @@
+FROM ubuntu:latest
+  
+CMD ["apt-get", "update", "--quiet", "--yes"]
+CMD ["apt-get", "upgrade", "--quiet", "--yes"]
+CMD ["apt-get", "install", "--quiet", "--yes", "git"]
+CMD ["apt-get", "install", "--yes", "curl"]
+
+CMD ["curl", "-sL", "https://deb.nodesource.com/setup_10.x", "|", "bash -"]
+CMD ["apt-get", "install", "--yes", "nodejs"]
+
+WORKDIR /home
