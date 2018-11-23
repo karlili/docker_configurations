@@ -1,9 +1,11 @@
 FROM ubuntu:latest
-  
+
+
 RUN ["apt-get", "update", "--quiet", "--yes"]
 RUN ["apt-get", "upgrade", "--quiet", "--yes"]
 RUN ["apt-get", "install", "--quiet", "--yes", "git"]
 RUN ["apt-get", "install", "--yes", "curl"]
+RUN ["apt-get", "install", "--yes", "build-essential"]
 
 RUN ["curl", "-sL", "https://deb.nodesource.com/setup_10.x", "|", "bash -"]
 RUN ["apt-get", "install", "--yes", "nodejs"]
