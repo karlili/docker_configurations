@@ -1,7 +1,7 @@
 #Ubuntu
 docker run -it --name ubuntu -v ~/anything/:/home ubuntu:latest
 
-#Node on ubuntu
+#Node on Ubuntu (with expo ports on)
 docker run -it —name expo-dev -p19000-19010:19000-19010 -v ~/anything:/code node:latest
 
 #Mongo with Mount
