@@ -1,3 +1,9 @@
+
+
 alias k8="kubectl"
 alias d="docker"
+alias dimg="docker images"
+alias dps="docker ps -a"
+alias dd="docker rmi $(docker images -f “dangling=true” -q)"
+
 alias k8_temp_shell="kubectl run --generator=run-pod/v1 shell --rm -i --tty --image ubuntu -- bash"
